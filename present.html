@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: #f9f4f4; /* لون خلفية ناعم */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Amiri', serif; /* خط عربي كلاسيكي */
+   
+    /* جرب الرابط ده وشوف النتيجة */
+    background-image: url('file:///E:/My%20Brojects/Present/present0.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.invitation-card {
+  background: rgba(255, 255, 255, 0.4); 
+    
+    /* أهم سطر لتأثير الكريستال (تغبيش اللي ورا البوكس) */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* لدعم متصفحات آيفون */
+    
+    /* حدود خفيفة كأنها حافة إزاز */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
+    /* شوية ظلال ناعمة عشان البوكس يبرز */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    
+    /* باقي التنسيقات اللي عندك */
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.names {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #8b0000;
+}
+
+.heart {
+    animation: pulse 1.5s infinite;
+    display: inline-block;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* مسافة بين المربعات */
+    margin: 30px 0;
+}
+
+.time-box {
+    background: linear-gradient(145deg, #d4af37, #b8860b); /* تدرج ذهبي احترافي */
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 70px;
+    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.4);
+    transition: transform 0.3s ease;
+}
+.time-box:hover {
+    transform: translateY(-5px); /* حركة خفيفة لما الماوس ييجي عليه */
+}
+.location-btn {
+     margin-top: 25px; /* دي المسافة اللي هينزلها لتحت */
+    display: inline-block; /* عشان يتأكد إن المسافة تتحسب صح */
+    cursor: pointer;
+    /* لو عايز تخليه شيك زي الصورة ضيف دول كمان */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+.location-btn {
+    background-color: transparent;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 25px;
+}
+.location-btn:hover {
+    background-color: #8b0000;
+    color: white;
+}
+.location{
+     border-bottom: 2px solid
+}
+.invitation-card h1, 
+.invitation-card p, 
+.invitation-card .names, 
+.invitation-card .date {
+    font-weight: bold; /* ه اللي بيخلي الخط عريض */
+    color: #000000;}
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+    <h1>دعوة حضور عقد قران</h1>
+    <div class="names">
+        <span>محمد</span>
+        <span class="heart">❤️</span>
+        <span>هدير</span>
+    </div>
+    <p class="message">نتشرف بدعوتكم لحضور عقد قران</p>
+    <div class="date">يوم الخميس، 8 يناير 2026</div>
+    
+    <div id="countdown">
+        <div class="time-box"><span id="days">8/1/2026</span> يوم</div>
+        <div class="time-box"><span id="hours">6</span> ساعة</div>
+        <div class="time-box"><span id="minutes">00</span> دقيقة</div>
+    </div class='location'>
+
+    <button class="location-btn" onclick="showMap()">مسجد أولاد صدقة📍</button>
+</div>
+<script>
+      
+    </script>
+</body>
+</html>
+</body>
+</html>
